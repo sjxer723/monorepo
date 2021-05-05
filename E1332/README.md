@@ -44,6 +44,7 @@ i.e 其中beq\bne指令只要对两个源操作数做异或运算，并比较结
 另一方面需要将某些指令映射到对应的alu操作，主要参考上面的表格即可。
 
 #### 仿真结果
+
 ![Image text] (https://github.com/sjxer723/monorepo/blob/main/E1332/img/sc_computer.png)
 
 ### 单周期带I/O口 CPU
@@ -53,6 +54,7 @@ i.e 其中beq\bne指令只要对两个源操作数做异或运算，并比较结
 第二个实验需要改动的地方较多，有些内容老师提示的也较少，因此参考了部分往届代码。
 
 在老师给的cpu结构图上做了一些修正：
+
 ![Image text] (https://github.com/sjxer723/monorepo/blob/main/E1332/img/sc_datamem.png)
 
 
