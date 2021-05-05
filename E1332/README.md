@@ -45,7 +45,7 @@ i.e 其中beq\bne指令只要对两个源操作数做异或运算，并比较结
 
 #### 仿真结果
 
-![Image] (https://github.com/sjxer723/monorepo/blob/main/E1332/img/sc_computer.png)
+![image] (https://github.com/sjxer723/monorepo/blob/main/E1332/img/sc_computer.png)
 
 ### 单周期带I/O口 CPU
 
@@ -55,7 +55,7 @@ i.e 其中beq\bne指令只要对两个源操作数做异或运算，并比较结
 
 在老师给的cpu结构图上做了一些修正：
 
-![Image] (https://github.com/sjxer723/monorepo/blob/main/E1332/img/sc_datamem.png)
+![image] (https://github.com/sjxer723/monorepo/blob/main/E1332/img/sc_datamem.png)
 
 
 #### 为io_output添加resetn信号
