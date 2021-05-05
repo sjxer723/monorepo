@@ -11,7 +11,6 @@ module sc_cu (op, func, z, wmem, wreg, regrt, m2reg, aluc, shift,
 	/*
 	* Step1: Instruction decode
 	**/
-
    wire i_add = r_type && (func == 6'h20);	//100000
    wire i_sub = r_type && (func == 6'h22);	//100010
    wire i_and = r_type && (func == 6'h24);	//100100
@@ -21,6 +20,7 @@ module sc_cu (op, func, z, wmem, wreg, regrt, m2reg, aluc, shift,
    wire i_srl = r_type && (func == 6'h02);	//000010
    wire i_sra = r_type && (func == 6'h03);	//000011
    wire i_jr  = r_type && (func == 6'h08);	//001000
+	wire i_cont =r_type && (func == 6'h09);	//001001
                 
    wire i_addi = (op == 6'b001000);	//001000
    wire i_andi = (op == 6'b001100);	//001100   
@@ -40,12 +40,12 @@ module sc_cu (op, func, z, wmem, wreg, regrt, m2reg, aluc, shift,
 
    assign wreg = i_add | i_sub | i_and | i_or   | i_xor  |
                  i_sll | i_srl | i_sra | i_addi | i_andi |
-                 i_ori | i_xori | i_lw | i_lui  | i_jal;
+                 i_ori | i_xori | i_lw | i_lui  | i_jal  | i_cont;
 
-   assign aluc[3] = i_sra;
+   assign aluc[3] = i_sra | i_cont;
    assign aluc[2] = i_sub | i_or   | i_lui | i_srl | i_sra | i_ori;		//ori
-   assign aluc[1] = i_xor | i_xori | i_bne | i_beq | i_lui | i_sll | i_srl | i_sra;
-   assign aluc[0] = i_and | i_andi | i_or  | i_ori | i_sll | i_srl | i_sra;
+   assign aluc[1] = i_xor | i_xori | i_bne | i_beq | i_lui | i_sll | i_srl | i_sra | i_cont;
+   assign aluc[0] = i_and | i_andi | i_or  | i_ori | i_sll | i_srl | i_sra | i_cont;
 
 	assign shift   = i_sll | i_srl  | i_sra ;
 	

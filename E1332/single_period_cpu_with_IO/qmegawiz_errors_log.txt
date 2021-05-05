@@ -1,0 +1,16 @@
+
+
+C:/intelFPGA_lite/20.1/fix/single_period_cpu_with_IO/lpm_rom_irom.v
+
+May 05 12PM:39:19>: Megafunction LPM_ROM is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/intelFPGA_lite/20.1/fix/single_period_cpu_with_IO/lpm_rom_irom.v
+
+May 05 12PM:39:32>: Megafunction LPM_ROM is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/intelFPGA_lite/20.1/fix/single_period_cpu_with_IO/lpm_rom_irom.v
+
+May 05 12PM:39:34>: Megafunction LPM_ROM is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

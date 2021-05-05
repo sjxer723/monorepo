@@ -11,7 +11,7 @@ BEGIN
 2 : 20030088;        % (08)       addi $3, $0, 136 # outport2                       %
 3 : 8c240000;        % (0c) loop: lw   $4, 0($1)   # input inport0 to $4            %
 4 : 8c450000;        % (10)       lw   $5, 0($2)   # input inport1 to $5            %
-5 : 00853020;        % (14)       add  $6, $4, $5  # add inport0 with inport1 to $6 %
+5 : 00853009;        % (14)       add  $6, $4, $5  # add inport0 with inport1 to $6 %
 6 : ac240000;        % (18)       sw   $4, 0($1)   # output inport0 to outport0     %
 7 : ac450000;        % (1c)       sw   $5, 0($2)   # output inport1 to outport1     %
 8 : ac660000;        % (20)       sw   $6, 0($3)   # output result to outport2      %
