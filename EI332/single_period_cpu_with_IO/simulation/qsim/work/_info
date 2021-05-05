@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/20.1/fix/single_period_cpu_with_IO/simulation/qsim
+vsc_computer
+Z1 !s110 1620190740
+!i10b 1
+!s100 2=J3z_?d@zUU]7n1l^gzU0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I`QK4<fbJ:`oS[O?E>HOz;0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1620190738
+8sc_computer.vo
+Fsc_computer.vo
+!i122 24
+L0 32 111842
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1620190739.000000
+!s107 sc_computer.vo|
+!s90 -work|work|sc_computer.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vsc_computer_vlg_vec_tst
+R1
+!i10b 1
+!s100 Z^oEan58bRh@]Olg<Un^H1
+R2
+I6eBi9b;5URIa]^jAmC_:m2
+R3
+R0
+w1620190737
+8sc_computer_test_wave_02.vwf.vt
+Fsc_computer_test_wave_02.vwf.vt
+!i122 25
+L0 30 190
+R4
+r1
+!s85 0
+31
+!s108 1620190740.000000
+!s107 sc_computer_test_wave_02.vwf.vt|
+!s90 -work|work|sc_computer_test_wave_02.vwf.vt|
+!i113 1
+R5
+R6

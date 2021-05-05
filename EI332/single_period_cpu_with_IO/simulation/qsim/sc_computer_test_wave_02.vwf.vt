@@ -1,0 +1,220 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/05/2021 12:58:57"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          sc_computer
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module sc_computer_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg SW0;
+reg SW1;
+reg SW2;
+reg SW3;
+reg SW4;
+reg SW5;
+reg SW6;
+reg SW7;
+reg SW8;
+reg SW9;
+reg clk;
+reg resetn;
+// wires                                               
+wire [6:0] HEX0;
+wire [6:0] HEX1;
+wire [6:0] HEX2;
+wire [6:0] HEX3;
+wire [6:0] HEX4;
+wire [6:0] HEX5;
+
+// assign statements (if any)                          
+sc_computer i1 (
+// port map - connection between master ports and signals/registers   
+	.HEX0(HEX0),
+	.HEX1(HEX1),
+	.HEX2(HEX2),
+	.HEX3(HEX3),
+	.HEX4(HEX4),
+	.HEX5(HEX5),
+	.SW0(SW0),
+	.SW1(SW1),
+	.SW2(SW2),
+	.SW3(SW3),
+	.SW4(SW4),
+	.SW5(SW5),
+	.SW6(SW6),
+	.SW7(SW7),
+	.SW8(SW8),
+	.SW9(SW9),
+	.clk(clk),
+	.resetn(resetn)
+);
+initial 
+begin 
+#2000000 $finish;
+end 
+
+// SW0
+always
+begin
+	SW0 = 1'b0;
+	SW0 = #50000 1'b1;
+	#50000;
+end 
+
+// SW1
+initial
+begin
+	SW1 = 1'b1;
+	# 100000;
+	repeat(9)
+	begin
+		SW1 = 1'b0;
+		SW1 = #100000 1'b1;
+		# 100000;
+	end
+	SW1 = 1'b0;
+end 
+
+// SW2
+initial
+begin
+	SW2 = 1'b0;
+	# 100000;
+	repeat(4)
+	begin
+		SW2 = 1'b1;
+		SW2 = #200000 1'b0;
+		# 200000;
+	end
+	SW2 = 1'b1;
+	SW2 = #200000 1'b0;
+end 
+
+// SW3
+initial
+begin
+	SW3 = 1'b0;
+	# 300000;
+	repeat(2)
+	begin
+		SW3 = 1'b1;
+		SW3 = #400000 1'b0;
+		# 400000;
+	end
+	SW3 = 1'b1;
+end 
+
+// SW4
+initial
+begin
+	SW4 = 1'b0;
+	SW4 = #700000 1'b1;
+	SW4 = #800000 1'b0;
+end 
+
+// SW5
+initial
+begin
+	SW5 = 1'b1;
+	# 50000;
+	repeat(19)
+	begin
+		SW5 = 1'b0;
+		SW5 = #50000 1'b1;
+		# 50000;
+	end
+	SW5 = 1'b0;
+end 
+
+// SW6
+initial
+begin
+	SW6 = 1'b0;
+	# 50000;
+	repeat(9)
+	begin
+		SW6 = 1'b1;
+		SW6 = #100000 1'b0;
+		# 100000;
+	end
+	SW6 = 1'b1;
+	SW6 = #100000 1'b0;
+end 
+
+// SW7
+initial
+begin
+	SW7 = 1'b0;
+	# 150000;
+	repeat(4)
+	begin
+		SW7 = 1'b1;
+		SW7 = #200000 1'b0;
+		# 200000;
+	end
+	SW7 = 1'b1;
+	SW7 = #200000 1'b0;
+end 
+
+// SW8
+initial
+begin
+	SW8 = 1'b0;
+	# 350000;
+	repeat(2)
+	begin
+		SW8 = 1'b1;
+		SW8 = #400000 1'b0;
+		# 400000;
+	end
+	SW8 = 1'b1;
+end 
+
+// SW9
+initial
+begin
+	SW9 = 1'b0;
+	SW9 = #750000 1'b1;
+	SW9 = #800000 1'b0;
+end 
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #500 1'b1;
+	#500;
+end 
+
+// resetn
+initial
+begin
+	resetn = 1'b0;
+	resetn = #10000 1'b1;
+end 
+endmodule
+
